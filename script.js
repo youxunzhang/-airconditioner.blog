@@ -188,6 +188,249 @@ const brands = [
     "phone": "1-800-GOODMAN",
     "email": "service@goodman.com",
     "address": "Goodman Manufacturing Company, Houston, Texas, USA"
+  },
+  {
+    "name": "Bryant",
+    "category": "commercial",
+    "description": "American HVAC brand providing reliable residential and commercial air conditioning systems with advanced technology.",
+    "website": "https://www.bryant.com/",
+    "phone": "1-800-BRYANT",
+    "email": "service@bryant.com",
+    "address": "Bryant Heating & Cooling Systems, Indianapolis, Indiana, USA"
+  },
+  {
+    "name": "American Standard",
+    "category": "commercial",
+    "description": "American HVAC manufacturer offering high-quality air conditioning systems for residential and commercial use.",
+    "website": "https://www.americanstandardair.com/",
+    "phone": "1-800-AMERICAN",
+    "email": "service@americanstandard.com",
+    "address": "American Standard Companies, Piscataway, New Jersey, USA"
+  },
+  {
+    "name": "Amana",
+    "category": "commercial",
+    "description": "American HVAC brand known for reliable and energy-efficient air conditioning solutions.",
+    "website": "https://www.amana-hac.com/",
+    "phone": "1-800-AMANA-AC",
+    "email": "service@amana.com",
+    "address": "Amana Corporation, Amana, Iowa, USA"
+  },
+  {
+    "name": "Frigidaire",
+    "category": "international",
+    "description": "American appliance brand offering reliable air conditioning systems with innovative cooling technology.",
+    "website": "https://www.frigidaire.com/",
+    "phone": "1-800-FRIGIDAIRE",
+    "email": "service@frigidaire.com",
+    "address": "Electrolux Home Products, Charlotte, North Carolina, USA"
+  },
+  {
+    "name": "Whirlpool",
+    "category": "international",
+    "description": "Global appliance manufacturer providing reliable air conditioning solutions for home and office.",
+    "website": "https://www.whirlpool.com/",
+    "phone": "1-800-WHIRLPOOL",
+    "email": "service@whirlpool.com",
+    "address": "Whirlpool Corporation, Benton Harbor, Michigan, USA"
+  },
+  {
+    "name": "GE Appliances",
+    "category": "international",
+    "description": "American appliance brand offering innovative air conditioning systems with smart technology.",
+    "website": "https://www.geappliances.com/",
+    "phone": "1-800-GE-APPLIANCES",
+    "email": "service@geappliances.com",
+    "address": "GE Appliances, Louisville, Kentucky, USA"
+  },
+  {
+    "name": "Maytag",
+    "category": "international",
+    "description": "American appliance brand known for durable and reliable air conditioning systems.",
+    "website": "https://www.maytag.com/",
+    "phone": "1-800-MAYTAG",
+    "email": "service@maytag.com",
+    "address": "Maytag Corporation, Newton, Iowa, USA"
+  },
+  {
+    "name": "Kenmore",
+    "category": "international",
+    "description": "American appliance brand offering reliable air conditioning solutions for residential use.",
+    "website": "https://www.kenmore.com/",
+    "phone": "1-800-KENMORE",
+    "email": "service@kenmore.com",
+    "address": "Sears Holdings Corporation, Hoffman Estates, Illinois, USA"
+  },
+  {
+    "name": "Bosch",
+    "category": "luxury",
+    "description": "German engineering company offering premium air conditioning systems with advanced technology.",
+    "website": "https://www.bosch-climate.com/",
+    "phone": "1-800-BOSCH-AC",
+    "email": "service@bosch.com",
+    "address": "Bosch Thermotechnology, Wetzlar, Germany"
+  },
+  {
+    "name": "Mitsubishi Electric",
+    "category": "luxury",
+    "description": "Japanese premium brand offering high-quality air conditioning with advanced climate control technology.",
+    "website": "https://www.mitsubishielectric.com/",
+    "phone": "1-800-MELCO-AC",
+    "email": "service@mitsubishielectric.com",
+    "address": "Mitsubishi Electric Corporation, Tokyo, Japan"
+  },
+  {
+    "name": "Sanyo",
+    "category": "international",
+    "description": "Japanese electronics brand offering reliable air conditioning systems with energy-saving technology.",
+    "website": "https://www.sanyo.com/",
+    "phone": "1-800-SANYO-AC",
+    "email": "service@sanyo.com",
+    "address": "Sanyo Electric Co., Ltd., Osaka, Japan"
+  },
+  {
+    "name": "O General",
+    "category": "international",
+    "description": "Japanese brand specializing in air conditioning systems with advanced cooling technology.",
+    "website": "https://www.ogeneral.com/",
+    "phone": "1-800-OGENERAL",
+    "email": "service@ogeneral.com",
+    "address": "General Corporation, Tokyo, Japan"
+  },
+  {
+    "name": "Voltas",
+    "category": "international",
+    "description": "Indian air conditioning brand offering reliable cooling solutions for various applications.",
+    "website": "https://www.voltas.com/",
+    "phone": "1-800-VOLTAS",
+    "email": "service@voltas.com",
+    "address": "Voltas Limited, Mumbai, Maharashtra, India"
+  },
+  {
+    "name": "Blue Star",
+    "category": "international",
+    "description": "Indian HVAC company providing air conditioning systems for residential and commercial use.",
+    "website": "https://www.bluestarindia.com/",
+    "phone": "1-800-BLUESTAR",
+    "email": "service@bluestar.com",
+    "address": "Blue Star Limited, Mumbai, Maharashtra, India"
+  },
+  {
+    "name": "Carrier India",
+    "category": "commercial",
+    "description": "Indian subsidiary of Carrier Global offering comprehensive HVAC solutions.",
+    "website": "https://www.carrierindia.com/",
+    "phone": "1-800-CARRIER-IN",
+    "email": "service@carrierindia.com",
+    "address": "Carrier Airconditioning & Refrigeration Ltd., Gurgaon, India"
+  },
+  {
+    "name": "Hitachi Cooling & Heating",
+    "category": "luxury",
+    "description": "Japanese premium brand specializing in advanced air conditioning and heating solutions.",
+    "website": "https://www.hitachiaircon.com/",
+    "phone": "1-800-HITACHI-AC",
+    "email": "service@hitachiaircon.com",
+    "address": "Hitachi Air Conditioning, Tokyo, Japan"
+  },
+  {
+    "name": "Toshiba Air Conditioning",
+    "category": "luxury",
+    "description": "Japanese premium brand offering innovative air conditioning systems with smart controls.",
+    "website": "https://www.toshiba-aircon.co.uk/",
+    "phone": "1-800-TOSHIBA-AC",
+    "email": "service@toshiba-aircon.com",
+    "address": "Toshiba Air Conditioning, Tokyo, Japan"
+  },
+  {
+    "name": "Fujitsu General",
+    "category": "luxury",
+    "description": "Japanese premium brand specializing in comfort and energy-saving air conditioning technologies.",
+    "website": "https://www.fujitsu-general.com/",
+    "phone": "1-800-FUJITSU-GEN",
+    "email": "service@fujitsu-general.com",
+    "address": "Fujitsu General Limited, Kawasaki, Japan"
+  },
+  {
+    "name": "Sharp Air Conditioning",
+    "category": "luxury",
+    "description": "Japanese electronics brand offering high-quality air conditioning with Plasmacluster ion technology.",
+    "website": "https://www.sharp.co.jp/",
+    "phone": "1-800-SHARP-AC",
+    "email": "service@sharp.co.jp",
+    "address": "Sharp Corporation, Osaka, Japan"
+  },
+  {
+    "name": "Daikin Europe",
+    "category": "international",
+    "description": "European division of Daikin offering premium air conditioning systems with inverter technology.",
+    "website": "https://www.daikin.eu/",
+    "phone": "1-800-DAIKIN-EU",
+    "email": "service@daikin.eu",
+    "address": "Daikin Europe N.V., Brussels, Belgium"
+  },
+  {
+    "name": "Mitsubishi Heavy Industries Europe",
+    "category": "international",
+    "description": "European division of MHI offering high-efficiency air conditioning solutions.",
+    "website": "https://www.mhi.com/",
+    "phone": "1-800-MHI-EU",
+    "email": "service@mhi-europe.com",
+    "address": "Mitsubishi Heavy Industries Europe, London, UK"
+  },
+  {
+    "name": "LG Electronics Europe",
+    "category": "international",
+    "description": "European division of LG offering innovative air conditioning solutions with smart features.",
+    "website": "https://www.lg.com/uk/",
+    "phone": "1-800-LG-EU",
+    "email": "service@lg-europe.com",
+    "address": "LG Electronics Europe, London, UK"
+  },
+  {
+    "name": "Samsung Electronics Europe",
+    "category": "international",
+    "description": "European division of Samsung providing smart air conditioning systems with IoT connectivity.",
+    "website": "https://www.samsung.com/uk/",
+    "phone": "1-800-SAMSUNG-EU",
+    "email": "service@samsung-europe.com",
+    "address": "Samsung Electronics Europe, London, UK"
+  },
+  {
+    "name": "Panasonic Europe",
+    "category": "international",
+    "description": "European division of Panasonic offering quiet and energy-efficient air conditioning products.",
+    "website": "https://www.panasonic.eu/",
+    "phone": "1-800-PANASONIC-EU",
+    "email": "service@panasonic-europe.com",
+    "address": "Panasonic Europe, Wiesbaden, Germany"
+  },
+  {
+    "name": "Gree Europe",
+    "category": "domestic",
+    "description": "European division of Gree offering innovative air conditioning systems with energy efficiency.",
+    "website": "https://www.gree.com/",
+    "phone": "1-800-GREE-EU",
+    "email": "service@gree-europe.com",
+    "address": "Gree Electric Appliances Europe, Milan, Italy"
+  },
+  {
+    "name": "Midea Europe",
+    "category": "domestic",
+    "description": "European division of Midea offering comprehensive AC product lines with smart connectivity.",
+    "website": "https://www.midea.com/",
+    "phone": "1-800-MIDEA-EU",
+    "email": "service@midea-europe.com",
+    "address": "Midea Europe, Milan, Italy"
+  },
+  {
+    "name": "Haier Europe",
+    "category": "domestic",
+    "description": "European division of Haier offering smart and energy-efficient air conditioning solutions.",
+    "website": "https://www.haier.com/",
+    "phone": "1-800-HAIER-EU",
+    "email": "service@haier-europe.com",
+    "address": "Haier Europe, Milan, Italy"
   }
 ];
 
@@ -209,6 +452,7 @@ const modalClose = document.querySelector('.modal .close');
 // Initialize after page loads
 document.addEventListener('DOMContentLoaded', function() {
     renderBrands(brands);
+    updateBrandStats();
 });
 
 // Render brand cards
@@ -263,6 +507,30 @@ function getCategoryName(cat) {
         case 'commercial': return 'Commercial Brands';
         default: return 'Other';
     }
+}
+
+// Update brand statistics
+function updateBrandStats() {
+    const totalBrands = brands.length;
+    const domesticBrands = brands.filter(b => b.category === 'domestic').length;
+    const internationalBrands = brands.filter(b => b.category === 'international').length;
+    const premiumBrands = brands.filter(b => b.category === 'luxury').length;
+    const commercialBrands = brands.filter(b => b.category === 'commercial').length;
+    
+    // Update DOM elements if they exist
+    const totalElement = document.getElementById('totalBrands');
+    const domesticElement = document.getElementById('domesticBrands');
+    const internationalElement = document.getElementById('internationalBrands');
+    const premiumElement = document.getElementById('premiumBrands');
+    const commercialElement = document.getElementById('commercialBrands');
+    
+    if (totalElement) totalElement.textContent = totalBrands;
+    if (domesticElement) domesticElement.textContent = domesticBrands;
+    if (internationalElement) internationalElement.textContent = internationalBrands;
+    if (premiumElement) premiumElement.textContent = premiumBrands;
+    if (commercialElement) commercialElement.textContent = commercialBrands;
+    
+    console.log(`Brand Stats: Total=${totalBrands}, Domestic=${domesticBrands}, International=${internationalBrands}, Premium=${premiumBrands}, Commercial=${commercialBrands}`);
 }
 
 // Search functionality

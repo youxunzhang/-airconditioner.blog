@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Brand Games - Fun & Relax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-snowflake"></i>
+                <span>AC Brand Games</span>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="game.html" class="active">Games</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero game-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Take a Break & Play!</h1>
+                <p>Enjoy these fun air conditioning themed games while you relax</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Selection -->
+    <section class="game-selection">
+        <div class="container">
+            <h2>Choose Your Game</h2>
+            <div class="game-grid">
+                <div class="game-card" data-game="memory">
+                    <div class="game-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Memory Match</h3>
+                    <p>Match AC brand logos in this classic memory game</p>
+                    <button class="play-btn" onclick="startGame('memory')">Play Now</button>
+                </div>
+                <div class="game-card" data-game="puzzle">
+                    <div class="game-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Brand Puzzle</h3>
+                    <p>Arrange the pieces to complete AC brand logos</p>
+                    <button class="play-btn" onclick="startGame('puzzle')">Play Now</button>
+                </div>
+                <div class="game-card" data-game="quiz">
+                    <div class="game-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>AC Quiz</h3>
+                    <p>Test your knowledge about air conditioning brands</p>
+                    <button class="play-btn" onclick="startGame('quiz')">Play Now</button>
+                </div>
+                <div class="game-card" data-game="typing">
+                    <div class="game-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Speed Typing</h3>
+                    <p>Type AC brand names as fast as you can</p>
+                    <button class="play-btn" onclick="startGame('typing')">Play Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Area -->
+    <section class="game-area" id="gameArea" style="display: none;">
+        <div class="container">
+            <div class="game-header">
+                <button class="back-btn" onclick="showGameSelection()">
+                    <i class="fas fa-arrow-left"></i> Back to Games
+                </button>
+                <div class="game-stats">
+                    <span id="score">Score: 0</span>
+                    <span id="timer">Time: 60s</span>
+                </div>
+            </div>
+            
+            <!-- Memory Game -->
+            <div id="memoryGame" class="game-container" style="display: none;">
+                <h3>Memory Match - Find Matching Brand Logos</h3>
+                <div class="memory-grid" id="memoryGrid"></div>
+                <div class="game-controls">
+                    <button class="restart-btn" onclick="restartGame()">Restart</button>
+                </div>
+            </div>
+
+            <!-- Puzzle Game -->
+            <div id="puzzleGame" class="game-container" style="display: none;">
+                <h3>Brand Puzzle - Arrange the Pieces</h3>
+                <div class="puzzle-container">
+                    <div class="puzzle-image" id="puzzleImage"></div>
+                    <div class="puzzle-pieces" id="puzzlePieces"></div>
+                </div>
+                <div class="game-controls">
+                    <button class="restart-btn" onclick="restartGame()">Restart</button>
+                </div>
+            </div>
+
+            <!-- Quiz Game -->
+            <div id="quizGame" class="game-container" style="display: none;">
+                <h3>AC Brand Quiz</h3>
+                <div class="quiz-container">
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                    <div class="quiz-progress">
+                        <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Game -->
+            <div id="typingGame" class="game-container" style="display: none;">
+                <h3>Speed Typing - Type AC Brand Names</h3>
+                <div class="typing-container">
+                    <div class="word-display" id="wordDisplay"></div>
+                    <input type="text" id="typingInput" placeholder="Type the brand name..." autocomplete="off">
+                    <div class="typing-stats">
+                        <span id="wpm">WPM: 0</span>
+                        <span id="accuracy">Accuracy: 100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Results Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content game-modal">
+            <span class="close" onclick="closeGameModal()">&times;</span>
+            <div id="gameResults"></div>
+        </div>
+    </div>
+
+    <script src="brand-logos.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
