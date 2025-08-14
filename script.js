@@ -3,7 +3,7 @@ const brands = [
   {
     "name": "Gree",
     "category": "domestic",
-    "description": "Leading Chinese AC brand specializing in residential and commercial air conditioning systems.",
+    "description": "Leading Chinese AC brand specializing in residential and commercial air conditioning systems with innovative technology and energy efficiency.",
     "website": "https://www.gree.com/",
     "phone": "1-800-GREE-AC",
     "email": "service@gree.com",
@@ -12,7 +12,7 @@ const brands = [
   {
     "name": "Midea",
     "category": "domestic",
-    "description": "China's leading home appliance brand with comprehensive AC product lines for residential and commercial use.",
+    "description": "China's leading home appliance brand with comprehensive AC product lines for residential and commercial use, known for smart connectivity.",
     "website": "https://www.midea.com/",
     "phone": "1-800-MIDEA-AC",
     "email": "service@midea.com",
@@ -21,16 +21,34 @@ const brands = [
   {
     "name": "Haier",
     "category": "domestic",
-    "description": "Global home appliance brand known for smart and energy-efficient air conditioning solutions.",
+    "description": "Global home appliance brand known for smart and energy-efficient air conditioning solutions with IoT integration.",
     "website": "https://www.haier.com/",
     "phone": "1-800-HAIER-AC",
     "email": "service@haier.com",
     "address": "Haier Group, Qingdao, Shandong, China"
   },
   {
+    "name": "Chigo",
+    "category": "domestic",
+    "description": "Chinese AC manufacturer specializing in residential and light commercial air conditioning with competitive pricing.",
+    "website": "https://www.chigo.com/",
+    "phone": "1-800-CHIGO-AC",
+    "email": "service@chigo.com",
+    "address": "Chigo Group, Foshan, Guangdong, China"
+  },
+  {
+    "name": "AUX",
+    "category": "domestic",
+    "description": "Chinese AC brand offering reliable and affordable air conditioning solutions for home and office use.",
+    "website": "https://www.aux.com/",
+    "phone": "1-800-AUX-AC",
+    "email": "service@aux.com",
+    "address": "AUX Group, Ningbo, Zhejiang, China"
+  },
+  {
     "name": "Daikin",
     "category": "international",
-    "description": "Japanese premium AC brand specializing in high-end residential and commercial air conditioning systems.",
+    "description": "Japanese premium AC brand specializing in high-end residential and commercial air conditioning systems with inverter technology.",
     "website": "https://www.daikin.com/",
     "phone": "1-800-DAIKIN-AC",
     "email": "service@daikin.com",
@@ -39,7 +57,7 @@ const brands = [
   {
     "name": "Panasonic",
     "category": "international",
-    "description": "Japanese electronics giant offering quiet and energy-efficient air conditioning products.",
+    "description": "Japanese electronics giant offering quiet and energy-efficient air conditioning products with nanoe technology.",
     "website": "https://www.panasonic.com/",
     "phone": "1-800-PANASONIC",
     "email": "service@panasonic.com",
@@ -48,16 +66,43 @@ const brands = [
   {
     "name": "Mitsubishi Heavy Industries",
     "category": "international",
-    "description": "Mitsubishi Group company focused on high-efficiency and energy-saving air conditioning solutions.",
+    "description": "Mitsubishi Group company focused on high-efficiency and energy-saving air conditioning solutions for all applications.",
     "website": "https://www.mhi.com/",
     "phone": "1-800-MHI-AC",
     "email": "service@mhi.com",
     "address": "Mitsubishi Heavy Industries, Tokyo, Japan"
   },
   {
+    "name": "Mitsubishi Electric",
+    "category": "international",
+    "description": "Premium Japanese brand known for high-quality air conditioning systems with advanced climate control technology.",
+    "website": "https://www.mitsubishielectric.com/",
+    "phone": "1-800-MELCO-AC",
+    "email": "service@mitsubishielectric.com",
+    "address": "Mitsubishi Electric Corporation, Tokyo, Japan"
+  },
+  {
+    "name": "LG",
+    "category": "international",
+    "description": "Korean electronics giant offering innovative air conditioning solutions with smart features and energy efficiency.",
+    "website": "https://www.lg.com/",
+    "phone": "1-800-LG-AC",
+    "email": "service@lg.com",
+    "address": "LG Electronics, Seoul, South Korea"
+  },
+  {
+    "name": "Samsung",
+    "category": "international",
+    "description": "Korean technology leader providing smart air conditioning systems with IoT connectivity and energy management.",
+    "website": "https://www.samsung.com/",
+    "phone": "1-800-SAMSUNG",
+    "email": "service@samsung.com",
+    "address": "Samsung Electronics, Seoul, South Korea"
+  },
+  {
     "name": "Hitachi",
     "category": "luxury",
-    "description": "Japanese premium AC brand known for high efficiency and whisper-quiet operation.",
+    "description": "Japanese premium AC brand known for high efficiency and whisper-quiet operation with advanced air purification.",
     "website": "https://www.hitachi.com/",
     "phone": "1-800-HITACHI",
     "email": "service@hitachi.com",
@@ -66,7 +111,7 @@ const brands = [
   {
     "name": "Toshiba",
     "category": "luxury",
-    "description": "Japanese premium electronics brand offering innovative and energy-efficient air conditioning solutions.",
+    "description": "Japanese premium electronics brand offering innovative and energy-efficient air conditioning solutions with smart controls.",
     "website": "https://www.toshiba.com/",
     "phone": "1-800-TOSHIBA",
     "email": "service@toshiba.com",
@@ -75,20 +120,74 @@ const brands = [
   {
     "name": "Fujitsu",
     "category": "luxury",
-    "description": "Japanese premium AC brand specializing in comfort and energy-saving technologies.",
+    "description": "Japanese premium AC brand specializing in comfort and energy-saving technologies with advanced climate control.",
     "website": "https://www.fujitsu.com/",
     "phone": "1-800-FUJITSU",
     "email": "service@fujitsu.com",
     "address": "Fujitsu Limited, Tokyo, Japan"
   },
   {
+    "name": "Sharp",
+    "category": "luxury",
+    "description": "Japanese electronics brand offering high-quality air conditioning with Plasmacluster ion technology for air purification.",
+    "website": "https://www.sharp.com/",
+    "phone": "1-800-SHARP-AC",
+    "email": "service@sharp.com",
+    "address": "Sharp Corporation, Osaka, Japan"
+  },
+  {
     "name": "York",
     "category": "commercial",
-    "description": "American commercial AC brand widely used in large-scale building applications.",
+    "description": "American commercial AC brand widely used in large-scale building applications with comprehensive HVAC solutions.",
     "website": "https://www.york.com/",
     "phone": "1-800-YORK-AC",
     "email": "service@york.com",
     "address": "Johnson Controls, Milwaukee, Wisconsin, USA"
+  },
+  {
+    "name": "Carrier",
+    "category": "commercial",
+    "description": "American HVAC leader providing commercial and residential air conditioning systems with innovative technology.",
+    "website": "https://www.carrier.com/",
+    "phone": "1-800-CARRIER",
+    "email": "service@carrier.com",
+    "address": "Carrier Global Corporation, Palm Beach Gardens, Florida, USA"
+  },
+  {
+    "name": "Trane",
+    "category": "commercial",
+    "description": "American commercial HVAC brand specializing in large-scale building climate control and energy management systems.",
+    "website": "https://www.trane.com/",
+    "phone": "1-800-TRANE-AC",
+    "email": "service@trane.com",
+    "address": "Trane Technologies, Davidson, North Carolina, USA"
+  },
+  {
+    "name": "Lennox",
+    "category": "commercial",
+    "description": "American HVAC manufacturer offering residential and commercial air conditioning with high efficiency ratings.",
+    "website": "https://www.lennox.com/",
+    "phone": "1-800-LENNOX",
+    "email": "service@lennox.com",
+    "address": "Lennox International, Richardson, Texas, USA"
+  },
+  {
+    "name": "Rheem",
+    "category": "commercial",
+    "description": "American HVAC brand providing reliable air conditioning systems for residential and commercial applications.",
+    "website": "https://www.rheem.com/",
+    "phone": "1-800-RHEEM-AC",
+    "email": "service@rheem.com",
+    "address": "Rheem Manufacturing Company, Atlanta, Georgia, USA"
+  },
+  {
+    "name": "Goodman",
+    "category": "commercial",
+    "description": "American HVAC manufacturer offering affordable and reliable air conditioning solutions for various applications.",
+    "website": "https://www.goodmanmfg.com/",
+    "phone": "1-800-GOODMAN",
+    "email": "service@goodman.com",
+    "address": "Goodman Manufacturing Company, Houston, Texas, USA"
   }
 ];
 
@@ -125,18 +224,31 @@ function renderBrands(list) {
     list.forEach(brand => {
         const card = document.createElement('div');
         card.className = 'brand-card';
-        card.innerHTML = `
-            <div class="brand-image">${brand.name[0]}</div>
-            <div class="brand-info">
-                <div class="brand-name">${brand.name}</div>
-                <div class="brand-category">${getCategoryName(brand.category)}</div>
-                <div class="brand-description">${brand.description}</div>
-                <div class="brand-contact">
-                    <button class="contact-btn primary" onclick="event.stopPropagation();window.open('${brand.website}','_blank')">Website</button>
-                    <button class="contact-btn secondary" onclick="event.stopPropagation();showBrandModal('${brand.name}')">Details</button>
-                </div>
+        
+        // Create brand image container
+        const brandImageDiv = document.createElement('div');
+        brandImageDiv.className = 'brand-image';
+        
+        // Create and append logo image
+        const logoImg = createBrandLogoImage(brand.name);
+        brandImageDiv.appendChild(logoImg);
+        
+        // Create brand info container
+        const brandInfoDiv = document.createElement('div');
+        brandInfoDiv.className = 'brand-info';
+        brandInfoDiv.innerHTML = `
+            <div class="brand-name">${brand.name}</div>
+            <div class="brand-category">${getCategoryName(brand.category)}</div>
+            <div class="brand-description">${brand.description}</div>
+            <div class="brand-contact">
+                <button class="contact-btn primary" onclick="event.stopPropagation();window.open('${brand.website}','_blank')">Website</button>
+                <button class="contact-btn secondary" onclick="event.stopPropagation();showBrandModal('${brand.name}')">Details</button>
             </div>
         `;
+        
+        // Append elements to card
+        card.appendChild(brandImageDiv);
+        card.appendChild(brandInfoDiv);
         card.onclick = () => showBrandModal(brand.name);
         brandsGrid.appendChild(card);
     });
@@ -175,20 +287,25 @@ function doSearch(keyword) {
         if (!result.length) {
             searchResults.innerHTML = '<p style="color:#888;">No brands found</p>';
         } else {
-            searchResults.innerHTML = result.map(b => `
-                <div class="brand-card" style="margin-bottom:1rem;">
-                    <div class="brand-image">${b.name[0]}</div>
-                    <div class="brand-info">
-                        <div class="brand-name">${b.name}</div>
-                        <div class="brand-category">${getCategoryName(b.category)}</div>
-                        <div class="brand-description">${b.description}</div>
-                        <div class="brand-contact">
-                            <button class="contact-btn primary" onclick="window.open('${b.website}','_blank')">Website</button>
-                            <button class="contact-btn secondary" onclick="showBrandModal('${b.name}')">Details</button>
+            searchResults.innerHTML = result.map(b => {
+                const logoData = getBrandLogo(b.name);
+                return `
+                    <div class="brand-card" style="margin-bottom:1rem;">
+                        <div class="brand-image">
+                            <img src="${logoData.logo}" alt="${b.name} Logo" class="brand-logo-img" onerror="this.src='${logoData.fallback}'">
+                        </div>
+                        <div class="brand-info">
+                            <div class="brand-name">${b.name}</div>
+                            <div class="brand-category">${getCategoryName(b.category)}</div>
+                            <div class="brand-description">${b.description}</div>
+                            <div class="brand-contact">
+                                <button class="contact-btn primary" onclick="window.open('${b.website}','_blank')">Website</button>
+                                <button class="contact-btn secondary" onclick="showBrandModal('${b.name}')">Details</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
     }
 }
@@ -249,7 +366,9 @@ function showBrandModal(name) {
     modalContent.innerHTML = `
         <div class="brand-detail">
             <div class="brand-detail-header">
-                <div class="brand-detail-logo">${brand.name[0]}</div>
+                <div class="brand-detail-logo">
+                    <img src="${getBrandLogo(brand.name).logo}" alt="${brand.name} Logo" class="brand-detail-logo-img" onerror="this.src='${getBrandLogo(brand.name).fallback}'">
+                </div>
                 <div class="brand-detail-info">
                     <h2>${brand.name}</h2>
                     <div class="category">${getCategoryName(brand.category)}</div>
