@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Test - AC Brands Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .logo-test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .logo-test-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-test-image {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .logo-test-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+        .logo-test-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .logo-test-status {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .status-success {
+            color: #28a745;
+        }
+        .status-error {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brand Logo Test</h1>
+        <p>Testing all brand logos to ensure they display correctly</p>
+        
+        <div class="logo-test-grid" id="logoTestGrid">
+            <!-- Logos will be loaded here -->
+        </div>
+    </div>
+
+    <script src="brand-logos.js"></script>
+    <script>
+        // Test all brand logos
+        const brands = [
+            "Gree", "Midea", "Haier", "Chigo", "AUX", "Daikin", "Panasonic", 
+            "Mitsubishi Heavy Industries", "Mitsubishi Electric", "LG", "Samsung", 
+            "Hitachi", "Toshiba", "Fujitsu", "Sharp", "York", "Carrier", "Trane", 
+            "Lennox", "Rheem", "Goodman", "Bryant", "American Standard", "Amana", 
+            "Frigidaire", "Whirlpool", "GE Appliances", "Maytag", "Kenmore", 
+            "Bosch", "Sanyo", "O General", "Voltas", "Blue Star", "Carrier India", 
+            "Hitachi Cooling & Heating", "Toshiba Air Conditioning", "Fujitsu General", 
+            "Sharp Air Conditioning", "Daikin Europe", "Mitsubishi Heavy Industries Europe", 
+            "LG Electronics Europe", "Samsung Electronics Europe", "Panasonic Europe", 
+            "Gree Europe", "Midea Europe", "Haier Europe"
+        ];
+
+        const testGrid = document.getElementById('logoTestGrid');
+
+        brands.forEach(brandName => {
+            const logoData = getBrandLogo(brandName);
+            const testItem = document.createElement('div');
+            testItem.className = 'logo-test-item';
+            
+            const img = document.createElement('img');
+            img.src = logoData.logo;
+            img.alt = `${brandName} Logo`;
+            img.onload = function() {
+                testItem.querySelector('.logo-test-status').textContent = '✓ Loaded successfully';
+                testItem.querySelector('.logo-test-status').className = 'logo-test-status status-success';
+            };
+            img.onerror = function() {
+                this.src = logoData.fallback;
+                testItem.querySelector('.logo-test-status').textContent = '⚠ Using fallback';
+                testItem.querySelector('.logo-test-status').className = 'logo-test-status status-error';
+            };
+            
+            testItem.innerHTML = `
+                <div class="logo-test-image">
+                    <img src="${logoData.logo}" alt="${brandName} Logo" onerror="this.src='${logoData.fallback}'">
+                </div>
+                <div class="logo-test-name">${brandName}</div>
+                <div class="logo-test-status">Loading...</div>
+            `;
+            
+            testGrid.appendChild(testItem);
+        });
+    </script>
+</body>
+</html>
