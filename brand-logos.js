@@ -13,11 +13,11 @@ const brandLogos = {
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=H"
     },
     "Chigo": {
-        logo: "https://www.chigo.com/favicon.ico",
+        logo: "https://www.chigo.com.cn/favicon.ico",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=C"
     },
     "AUX": {
-        logo: "https://www.aux.com/favicon.ico",
+        logo: "https://www.aux.com.cn/favicon.ico",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=A"
     },
     "Daikin": {
@@ -61,7 +61,7 @@ const brandLogos = {
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=S"
     },
     "York": {
-        logo: "https://www.york.com/favicon.ico",
+        logo: "https://www.johnsoncontrols.com/favicon.ico",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=Y"
     },
     "Carrier": {
@@ -121,7 +121,7 @@ const brandLogos = {
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=B"
     },
     "Sanyo": {
-        logo: "https://www.sanyo.com/favicon.ico",
+        logo: "https://www.panasonic.com/favicon.ico",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=S"
     },
     "O General": {

@@ -270,15 +270,7 @@ const brands = [
     "email": "service@bosch.com",
     "address": "Bosch Thermotechnology, Wetzlar, Germany"
   },
-  {
-    "name": "Mitsubishi Electric",
-    "category": "luxury",
-    "description": "Japanese premium brand offering high-quality air conditioning with advanced climate control technology.",
-    "website": "https://www.mitsubishielectric.com/",
-    "phone": "1-800-MELCO-AC",
-    "email": "service@mitsubishielectric.com",
-    "address": "Mitsubishi Electric Corporation, Tokyo, Japan"
-  },
+
   {
     "name": "Sanyo",
     "category": "international",

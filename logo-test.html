@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Logo Test - AC Brands Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .logo-test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .logo-test-item {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .logo-test-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .logo-test-image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1rem;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 2px solid #f0f0f0;
+        }
+        .logo-test-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 15px;
+        }
+        .logo-test-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .logo-test-status {
+            font-size: 0.9rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        .status-loading {
+            color: #007bff;
+            background: #e3f2fd;
+        }
+        .status-success {
+            color: #28a745;
+            background: #e8f5e8;
+        }
+        .status-error {
+            color: #dc3545;
+            background: #ffeaea;
+        }
+        .stats-bar {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+        .back-btn:hover {
+            background: #5a6fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="header">
+            <h1>Brand Logo Test</h1>
+            <p>Testing all brand logos to ensure they display correctly with fallback options</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalLogos">0</div>
+                    <div class="stat-label">Total Logos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="successLogos">0</div>
+                    <div class="stat-label">Successfully Loaded</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="fallbackLogos">0</div>
+                    <div class="stat-label">Using Fallback</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="errorLogos">0</div>
+                    <div class="stat-label">Failed to Load</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-test-grid" id="logoTestGrid">
+            <!-- Logos will be loaded here -->
+        </div>
+    </div>
+
+    <script src="brand-logos.js"></script>
+    <script>
+        // Test all brand logos
+        const brands = [
+            "Gree", "Midea", "Haier", "Chigo", "AUX", "Daikin", "Panasonic", 
+            "Mitsubishi Heavy Industries", "Mitsubishi Electric", "LG", "Samsung", 
+            "Hitachi", "Toshiba", "Fujitsu", "Sharp", "York", "Carrier", "Trane", 
+            "Lennox", "Rheem", "Goodman", "Bryant", "American Standard", "Amana", 
+            "Frigidaire", "Whirlpool", "GE Appliances", "Maytag", "Kenmore", 
+            "Bosch", "Sanyo", "O General", "Voltas", "Blue Star", "Carrier India", 
+            "Hitachi Cooling & Heating", "Toshiba Air Conditioning", "Fujitsu General", 
+            "Sharp Air Conditioning", "Daikin Europe", "Mitsubishi Heavy Industries Europe", 
+            "LG Electronics Europe", "Samsung Electronics Europe", "Panasonic Europe", 
+            "Gree Europe", "Midea Europe", "Haier Europe"
+        ];
+
+        const testGrid = document.getElementById('logoTestGrid');
+        let totalLogos = 0;
+        let successLogos = 0;
+        let fallbackLogos = 0;
+        let errorLogos = 0;
+
+        function updateStats() {
+            document.getElementById('totalLogos').textContent = totalLogos;
+            document.getElementById('successLogos').textContent = successLogos;
+            document.getElementById('fallbackLogos').textContent = fallbackLogos;
+            document.getElementById('errorLogos').textContent = errorLogos;
+        }
+
+        brands.forEach(brandName => {
+            const logoData = getBrandLogo(brandName);
+            const testItem = document.createElement('div');
+            testItem.className = 'logo-test-item';
+            
+            testItem.innerHTML = `
+                <div class="logo-test-image">
+                    <img src="${logoData.logo}" alt="${brandName} Logo" onerror="this.src='${logoData.fallback}'">
+                </div>
+                <div class="logo-test-name">${brandName}</div>
+                <div class="logo-test-status status-loading">Loading...</div>
+            `;
+            
+            const img = testItem.querySelector('img');
+            const statusDiv = testItem.querySelector('.logo-test-status');
+            
+            img.onload = function() {
+                statusDiv.textContent = '✓ Loaded successfully';
+                statusDiv.className = 'logo-test-status status-success';
+                successLogos++;
+                updateStats();
+            };
+            
+            img.onerror = function() {
+                if (logoData.alternatives && logoData.alternatives.length > 0) {
+                    // Try alternatives
+                    let alternativeIndex = 0;
+                    const tryAlternative = () => {
+                        if (alternativeIndex < logoData.alternatives.length) {
+                            this.src = logoData.alternatives[alternativeIndex];
+                            alternativeIndex++;
+                        } else {
+                            // All alternatives failed, use fallback
+                            this.src = logoData.fallback;
+                            statusDiv.textContent = '⚠ Using fallback';
+                            statusDiv.className = 'logo-test-status status-error';
+                            fallbackLogos++;
+                            updateStats();
+                        }
+                    };
+                    
+                    this.onerror = tryAlternative;
+                    tryAlternative();
+                } else {
+                    // No alternatives, use fallback directly
+                    this.src = logoData.fallback;
+                    statusDiv.textContent = '⚠ Using fallback';
+                    statusDiv.className = 'logo-test-status status-error';
+                    fallbackLogos++;
+                    updateStats();
+                }
+            };
+            
+            testGrid.appendChild(testItem);
+            totalLogos++;
+            updateStats();
+        });
+    </script>
+</body>
+</html>
