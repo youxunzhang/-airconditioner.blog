@@ -668,4 +668,155 @@ window.addEventListener('click', function(event) {
     if (event.target === brandModal) {
         brandModal.style.display = 'none';
     }
-}); 
+});
+
+// Bookmark functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const bookmarkBtn = document.getElementById('bookmarkBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    const shareModal = document.getElementById('shareModal');
+    
+    // Bookmark functionality
+    if (bookmarkBtn) {
+        bookmarkBtn.addEventListener('click', function() {
+            const currentUrl = window.location.href;
+            const currentTitle = document.title;
+            
+            // Check if already bookmarked
+            const bookmarks = JSON.parse(localStorage.getItem('acBookmarks') || '[]');
+            const isBookmarked = bookmarks.some(bookmark => bookmark.url === currentUrl);
+            
+            if (isBookmarked) {
+                // Remove bookmark
+                const updatedBookmarks = bookmarks.filter(bookmark => bookmark.url !== currentUrl);
+                localStorage.setItem('acBookmarks', JSON.stringify(updatedBookmarks));
+                bookmarkBtn.classList.remove('bookmarked');
+                showToast('Bookmark removed!', 'success');
+            } else {
+                // Add bookmark
+                bookmarks.push({
+                    url: currentUrl,
+                    title: currentTitle,
+                    timestamp: new Date().toISOString()
+                });
+                localStorage.setItem('acBookmarks', JSON.stringify(bookmarks));
+                bookmarkBtn.classList.add('bookmarked');
+                showToast('Page bookmarked!', 'success');
+            }
+        });
+        
+        // Check if current page is bookmarked
+        const bookmarks = JSON.parse(localStorage.getItem('acBookmarks') || '[]');
+        const currentUrl = window.location.href;
+        const isBookmarked = bookmarks.some(bookmark => bookmark.url === currentUrl);
+        if (isBookmarked) {
+            bookmarkBtn.classList.add('bookmarked');
+        }
+    }
+    
+    // Share functionality
+    if (shareBtn) {
+        shareBtn.addEventListener('click', function() {
+            if (shareModal) {
+                shareModal.style.display = 'block';
+                setupShareButtons();
+            }
+        });
+    }
+    
+    // Close share modal
+    const shareModalClose = shareModal?.querySelector('.close');
+    if (shareModalClose) {
+        shareModalClose.addEventListener('click', () => {
+            shareModal.style.display = 'none';
+        });
+    }
+    
+    window.addEventListener('click', function(event) {
+        if (event.target === shareModal) {
+            shareModal.style.display = 'none';
+        }
+    });
+});
+
+// Setup share buttons
+function setupShareButtons() {
+    const currentUrl = encodeURIComponent(window.location.href);
+    const currentTitle = encodeURIComponent(document.title);
+    const currentDescription = encodeURIComponent('Find the perfect air conditioning brand with our comprehensive directory');
+    
+    // Facebook
+    const facebookBtn = document.getElementById('shareFacebook');
+    if (facebookBtn) {
+        facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+        facebookBtn.target = '_blank';
+    }
+    
+    // Twitter
+    const twitterBtn = document.getElementById('shareTwitter');
+    if (twitterBtn) {
+        twitterBtn.href = `https://twitter.com/intent/tweet?url=${currentUrl}&text=${currentTitle}`;
+        twitterBtn.target = '_blank';
+    }
+    
+    // LinkedIn
+    const linkedinBtn = document.getElementById('shareLinkedIn');
+    if (linkedinBtn) {
+        linkedinBtn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
+        linkedinBtn.target = '_blank';
+    }
+    
+    // Reddit
+    const redditBtn = document.getElementById('shareReddit');
+    if (redditBtn) {
+        redditBtn.href = `https://reddit.com/submit?url=${currentUrl}&title=${currentTitle}`;
+        redditBtn.target = '_blank';
+    }
+    
+    // Pinterest
+    const pinterestBtn = document.getElementById('sharePinterest');
+    if (pinterestBtn) {
+        pinterestBtn.href = `https://pinterest.com/pin/create/button/?url=${currentUrl}&description=${currentTitle}`;
+        pinterestBtn.target = '_blank';
+    }
+    
+    // Copy Link
+    const copyBtn = document.getElementById('copyLink');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showToast('Link copied to clipboard!', 'success');
+            }).catch(() => {
+                showToast('Failed to copy link', 'error');
+            });
+        });
+    }
+}
+
+// Toast notification function
+function showToast(message, type = 'success') {
+    // Remove existing toast
+    const existingToast = document.querySelector('.toast');
+    if (existingToast) {
+        existingToast.remove();
+    }
+    
+    // Create new toast
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    // Show toast
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 100);
+    
+    // Hide toast after 3 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            toast.remove();
+        }, 300);
+    }, 3000);
+} 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (tongyong-gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXH17REJKN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,6 +15,19 @@
     <title>Air Conditioning Brands Directory - Professional AC Brand Information Platform</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Air Conditioning Brands Directory - Professional AC Brand Information Platform">
+    <meta property="og:description" content="Comprehensive directory of 20+ global AC brands with detailed product information, contact details, and after-sales service support">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=AC+Brands+Directory">
+    <meta property="og:url" content="https://airconditioner.blog">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Air Conditioning Brands Directory">
+    <meta name="twitter:description" content="Find the perfect air conditioning brand with our comprehensive directory">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=AC+Brands+Directory">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8794607118520437"
+         crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -29,9 +42,18 @@
                 <a href="#brands" class="nav-link">Brands</a>
                 <a href="#search" class="nav-link">Search</a>
                 <a href="game.html" class="nav-link">Games</a>
+                <a href="logo-preview.html" class="nav-link">Logo Preview</a>
                 <a href="logo-test.html" class="nav-link">Logo Test</a>
                 <a href="#about" class="nav-link">About</a>
             </nav>
+            <div class="header-actions">
+                <button id="bookmarkBtn" class="action-btn" title="Bookmark this page">
+                    <i class="fas fa-bookmark"></i>
+                </button>
+                <button id="shareBtn" class="action-btn" title="Share this page">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -190,6 +212,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- Page Summary Section -->
+        <section class="page-summary">
+            <div class="container">
+                <div class="summary-content">
+                    <h3>Page Summary</h3>
+                    <p>This Air Conditioning Brands Directory provides comprehensive information about 46+ global AC brands across different categories including domestic, international, luxury, and commercial brands. Users can search, filter, and explore detailed brand information including product types, contact details, and service support. The platform features advanced search functionality, brand statistics, logo previews, and interactive tools to help users find the perfect air conditioning solution for their needs.</p>
+                    <div class="summary-stats">
+                        <div class="stat">
+                            <span class="number">46+</span>
+                            <span class="label">Brands</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">4</span>
+                            <span class="label">Categories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">100%</span>
+                            <span class="label">Free Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -227,6 +273,34 @@
             <span class="close">&times;</span>
             <div id="modalContent">
                 <!-- Brand detail content will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Share This Page</h3>
+            <div class="share-buttons">
+                <a href="#" id="shareFacebook" class="share-btn facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="#" id="shareTwitter" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="#" id="shareLinkedIn" class="share-btn linkedin">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="#" id="shareReddit" class="share-btn reddit">
+                    <i class="fab fa-reddit-alien"></i> Reddit
+                </a>
+                <a href="#" id="sharePinterest" class="share-btn pinterest">
+                    <i class="fab fa-pinterest-p"></i> Pinterest
+                </a>
+                <button id="copyLink" class="share-btn copy">
+                    <i class="fas fa-copy"></i> Copy Link
+                </button>
             </div>
         </div>
     </div>
