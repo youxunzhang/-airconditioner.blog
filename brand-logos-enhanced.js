@@ -1,4 +1,4 @@
-// Brand Logo URLs - High Quality Sources
+// Enhanced Brand Logo URLs - High Quality Sources with Better Fallbacks
 const brandLogos = {
     "Gree": {
         logo: "https://logo.clearbit.com/gree.com?size=200",
@@ -49,148 +49,148 @@ const brandLogos = {
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=H"
     },
     "Toshiba": {
-        logo: "https://logo.clearbit.com/toshiba.com",
+        logo: "https://logo.clearbit.com/toshiba.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=T"
     },
     "Fujitsu": {
-        logo: "https://logo.clearbit.com/fujitsu.com",
+        logo: "https://logo.clearbit.com/fujitsu.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=F"
     },
     "Sharp": {
-        logo: "https://logo.clearbit.com/sharp.com",
+        logo: "https://logo.clearbit.com/sharp.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=S"
     },
     "York": {
-        logo: "https://logo.clearbit.com/johnsoncontrols.com",
+        logo: "https://logo.clearbit.com/johnsoncontrols.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=Y"
     },
     "Carrier": {
-        logo: "https://logo.clearbit.com/carrier.com",
+        logo: "https://logo.clearbit.com/carrier.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=C"
     },
     "Trane": {
-        logo: "https://logo.clearbit.com/trane.com",
+        logo: "https://logo.clearbit.com/trane.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=T"
     },
     "Lennox": {
-        logo: "https://logo.clearbit.com/lennox.com",
+        logo: "https://logo.clearbit.com/lennox.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=L"
     },
     "Rheem": {
-        logo: "https://logo.clearbit.com/rheem.com",
+        logo: "https://logo.clearbit.com/rheem.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=R"
     },
     "Goodman": {
-        logo: "https://logo.clearbit.com/goodmanmfg.com",
+        logo: "https://logo.clearbit.com/goodmanmfg.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=G"
     },
     "Bryant": {
-        logo: "https://logo.clearbit.com/bryant.com",
+        logo: "https://logo.clearbit.com/bryant.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=B"
     },
     "American Standard": {
-        logo: "https://logo.clearbit.com/americanstandardair.com",
+        logo: "https://logo.clearbit.com/americanstandardair.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=AS"
     },
     "Amana": {
-        logo: "https://logo.clearbit.com/amana-hac.com",
+        logo: "https://logo.clearbit.com/amana-hac.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=A"
     },
     "Frigidaire": {
-        logo: "https://logo.clearbit.com/frigidaire.com",
+        logo: "https://logo.clearbit.com/frigidaire.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=F"
     },
     "Whirlpool": {
-        logo: "https://logo.clearbit.com/whirlpool.com",
+        logo: "https://logo.clearbit.com/whirlpool.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=W"
     },
     "GE Appliances": {
-        logo: "https://logo.clearbit.com/geappliances.com",
+        logo: "https://logo.clearbit.com/geappliances.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=GE"
     },
     "Maytag": {
-        logo: "https://logo.clearbit.com/maytag.com",
+        logo: "https://logo.clearbit.com/maytag.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=M"
     },
     "Kenmore": {
-        logo: "https://logo.clearbit.com/kenmore.com",
+        logo: "https://logo.clearbit.com/kenmore.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=K"
     },
     "Bosch": {
-        logo: "https://logo.clearbit.com/bosch-climate.com",
+        logo: "https://logo.clearbit.com/bosch-climate.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=B"
     },
     "Sanyo": {
-        logo: "https://logo.clearbit.com/panasonic.com",
+        logo: "https://logo.clearbit.com/panasonic.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=S"
     },
     "O General": {
-        logo: "https://logo.clearbit.com/ogeneral.com",
+        logo: "https://logo.clearbit.com/ogeneral.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=OG"
     },
     "Voltas": {
-        logo: "https://logo.clearbit.com/voltas.com",
+        logo: "https://logo.clearbit.com/voltas.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=V"
     },
     "Blue Star": {
-        logo: "https://logo.clearbit.com/bluestarindia.com",
+        logo: "https://logo.clearbit.com/bluestarindia.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=BS"
     },
     "Carrier India": {
-        logo: "https://logo.clearbit.com/carrierindia.com",
+        logo: "https://logo.clearbit.com/carrierindia.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=CI"
     },
     "Hitachi Cooling & Heating": {
-        logo: "https://logo.clearbit.com/hitachiaircon.com",
+        logo: "https://logo.clearbit.com/hitachiaircon.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=HCH"
     },
     "Toshiba Air Conditioning": {
-        logo: "https://logo.clearbit.com/toshiba-aircon.co.uk",
+        logo: "https://logo.clearbit.com/toshiba-aircon.co.uk?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=TAC"
     },
     "Fujitsu General": {
-        logo: "https://logo.clearbit.com/fujitsu-general.com",
+        logo: "https://logo.clearbit.com/fujitsu-general.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=FG"
     },
     "Sharp Air Conditioning": {
-        logo: "https://logo.clearbit.com/sharp.co.jp",
+        logo: "https://logo.clearbit.com/sharp.co.jp?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=SAC"
     },
     "Daikin Europe": {
-        logo: "https://logo.clearbit.com/daikin.eu",
+        logo: "https://logo.clearbit.com/daikin.eu?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=DE"
     },
     "Mitsubishi Heavy Industries Europe": {
-        logo: "https://logo.clearbit.com/mhi.com",
+        logo: "https://logo.clearbit.com/mhi.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=MHIE"
     },
     "LG Electronics Europe": {
-        logo: "https://logo.clearbit.com/lg.com",
+        logo: "https://logo.clearbit.com/lg.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=LGE"
     },
     "Samsung Electronics Europe": {
-        logo: "https://logo.clearbit.com/samsung.com",
+        logo: "https://logo.clearbit.com/samsung.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=SEE"
     },
     "Panasonic Europe": {
-        logo: "https://logo.clearbit.com/panasonic.eu",
+        logo: "https://logo.clearbit.com/panasonic.eu?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=PE"
     },
     "Gree Europe": {
-        logo: "https://logo.clearbit.com/gree.com",
+        logo: "https://logo.clearbit.com/gree.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=GE"
     },
     "Midea Europe": {
-        logo: "https://logo.clearbit.com/midea.com",
+        logo: "https://logo.clearbit.com/midea.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=ME"
     },
     "Haier Europe": {
-        logo: "https://logo.clearbit.com/haier.com",
+        logo: "https://logo.clearbit.com/haier.com?size=200",
         fallback: "https://via.placeholder.com/200x200/667eea/ffffff?text=HE"
     }
 };
 
-// Function to get logo URL for a brand with multiple fallback options
+// Enhanced function to get logo URL with better fallback system
 function getBrandLogo(brandName) {
     const brandData = brandLogos[brandName];
     if (!brandData) {
@@ -222,7 +222,7 @@ function getBrandLogo(brandName) {
     };
 }
 
-// Function to create logo image element with error handling and multiple fallbacks
+// Enhanced function to create logo image with better error handling
 function createBrandLogoImage(brandName) {
     const logoData = getBrandLogo(brandName);
     const img = document.createElement('img');
