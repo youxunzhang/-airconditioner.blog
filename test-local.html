@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Local Logos</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .logo-test { margin: 20px 0; }
+        .logo-test img { width: 100px; height: 100px; border: 1px solid #ccc; margin: 10px; }
+        .status { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Local Logo Test</h1>
+    
+    <div class="logo-test">
+        <h3>Direct Image Test:</h3>
+        <img src="logos/gree.png" alt="Gree Logo" onload="this.nextElementSibling.textContent='✅ Loaded'" onerror="this.nextElementSibling.textContent='❌ Failed'">
+        <span class="status">Loading...</span>
+    </div>
+    
+    <div class="logo-test">
+        <h3>Placeholder Test:</h3>
+        <img src="https://via.placeholder.com/100x100/667eea/ffffff?text=G" alt="Placeholder">
+        <span class="status">✅ Placeholder works</span>
+    </div>
+    
+    <div class="logo-test">
+        <h3>Script Test:</h3>
+        <div id="scriptTest">Loading...</div>
+    </div>
+
+    <script src="brand-logos-local.js"></script>
+    <script>
+        // Test the script
+        try {
+            const logoData = getBrandLogo("Gree");
+            document.getElementById('scriptTest').innerHTML = `
+                <p>✅ Script loaded successfully</p>
+                <p>Logo path: ${logoData.logo}</p>
+                <p>Fallback: ${logoData.fallback}</p>
+            `;
+        } catch (error) {
+            document.getElementById('scriptTest').innerHTML = `<p class="error">❌ Script error: ${error.message}</p>`;
+        }
+    </script>
+</body>
+</html>
